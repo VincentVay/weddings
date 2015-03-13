@@ -1,0 +1,33 @@
+<fieldset class="list">
+<h1>Listing Enquiries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> First |</th>
+      <th> Surname |</th>
+      <th> Telephone |</th>
+      <th> Description |</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enquiries.each do |enquiry| %>
+      <tr>
+        <td><%= enquiry.first %></td>
+        <td><%= enquiry.surname %></td>
+        <td><%= enquiry.telephone %></td>
+        <td><%= enquiry.description %></td>
+        <td><%= link_to 'Show', enquiry %></td>
+        <td><%= link_to 'Edit', edit_enquiry_path(enquiry) %></td>
+        <td><%= link_to 'Destroy', enquiry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Enquiry', new_enquiry_path %>
+</fieldset>

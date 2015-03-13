@@ -1,4 +1,4 @@
-# @author Tom Cox <https://github.com/koxzi95>
+# @author Tom Cox <tom.jcox@icloud.com>
 # Required if CI fails default task
 require 'rspec/core/rake_task'
 task :default => :spec

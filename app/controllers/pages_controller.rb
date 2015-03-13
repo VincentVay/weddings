@@ -1,4 +1,4 @@
-# @author Tom Cox <https://github.com/koxzi95>
+# @author Tom Cox <tom.jcox@icloud.com>
 class PagesController < ApplicationController
 	# @see def resource_not_found
 	around_filter :resource_not_found

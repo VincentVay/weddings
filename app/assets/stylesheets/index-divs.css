@@ -76,3 +76,15 @@
   font-size: 1.1em;
   borders: 0.1em solid orange;
  }
+ 
+fieldset{
+	width: 50%;
+}
+
+fieldset.enquiry{
+	width: 30%;
+	position: relative;
+	bottom: 211.5px;
+	left: 550px;
+	
+}

@@ -1,0 +1,22 @@
+fieldset.new{
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+h1{
+    color: red;
+}
+
+fieldset.success{
+   margin-left: 300px; 
+}
+
+fieldset.list{
+   margin-left: 300px;
+   margin-bottom: 100px;
+}
+
+th{
+    letter-spacing: 5px;
+    
+}

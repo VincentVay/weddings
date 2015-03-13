@@ -1,4 +1,10 @@
-FactoryGirl.define do
+FactoryGirl.define do  factory :enquiry do
+    first ""
+surname ""
+email ""
+telephone "MyString"
+  end
+
 	# :name, :description, :size, :capacity, :price, :picture, :rmcat_id
 	factory :room do
 		name "The New Room"
@@ -14,22 +20,7 @@ FactoryGirl.define do
 
 	factory :rmcat do
 		rmtype "The New Roomcat"
-		# association :rooms, factory: :room
-	end
-
-	factory :extra do
-		extraimg_file_name 'extra-controller-valid.jpg'
-		extraimg_content_type 'image/jpeg'
-		extraimg_file_size 1.megabyte
-		name "The New Extra"
-		description "The brilliant new extra"
-		quantity "1"
-		price "100"
-	end
-
-	factory :extracat do
-		extratype "Beautiful"
-		# association :extras, factory: :extra
+		association :rooms, factory: :room
 	end
 
 	factory :user do

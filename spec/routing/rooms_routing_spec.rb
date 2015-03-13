@@ -1,4 +1,4 @@
-# @author Tom Cox <https://github.com/koxzi95>
+# @author Tom Cox <tom.jcox@icloud.com>
 require 'rails_helper'
 RSpec.describe RoomsController, :type => :routing do
 	describe "rooms routing" do
